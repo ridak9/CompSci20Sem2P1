@@ -56,3 +56,17 @@ public class Feb12
 	}
 
 }
+/* Screen Dump
+ 
+Test Case 1:
+Enter the number of eggs purchases: 
+7
+$0.29
+
+
+Test Case 2:
+Enter the number of eggs purchases: 
+12
+$0.50
+
+*/
