@@ -12,7 +12,7 @@ public class Feb20
 		
 		int vowelSum = 0;
 		
-		//Preparing for user input
+		//Preparing for user input 
 		Scanner input = new Scanner(System.in);
 		
 
