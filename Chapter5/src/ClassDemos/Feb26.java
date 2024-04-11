@@ -7,6 +7,9 @@ public class Feb26
 	{
 		int randNum;
 		int sequenceLength = 0;
+		String last = "aab";
+		
+		char a = last.ct
 		
 		do
 		{	//Generate random numbers between 1 - 11
