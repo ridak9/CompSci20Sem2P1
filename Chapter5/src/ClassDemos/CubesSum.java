@@ -10,7 +10,7 @@ Course: Computer Programming 20
  
 
 */
-package SkillBuilders;
+package ClassDemos;
 
 import java.util.Scanner;
 

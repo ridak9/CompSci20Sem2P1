@@ -11,9 +11,7 @@ Course: Computer Programming 20
 
 */
 
-
-
-package SkillBuilders;
+package ClassDemos;
 
 import java.text.*;
 import java.lang.*;
