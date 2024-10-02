@@ -1,5 +1,7 @@
 package ClassDemos;
 
+import java.util.Scanner;
+
 public class GradeConverter 
 {
 
@@ -63,13 +65,49 @@ public class GradeConverter
 		}
 	}
 	
-	
-	
-	
-	
+		
 	
 	public static void main(String[] args) 
 	{
+		//Declaration
+		final int FLAG = -1;
+		final int minValue = 0;
+		final int maxValue = 100;
+		int numericGrade;
+		String letterGrade;
+		
+		//Preparing for user input
+		Scanner input = new Scanner(System.in);
+		
+		//Prompt and record user input
+		System.out.println("Enter a numeric grade (-1 to quit): ");
+		numericGrade = input.nextInt();
+		
+		while(numericGrade != FLAG)
+		{
+			//Making a call to isValidNumber method
+			if(isValidNumber(numericGrade, minValue, maxValue))
+			{
+				//Making a call to getLetterGrade method
+				letterGrade = getLetterGrade(numericGrade);
+				
+				System.out.println("The grade "+
+									numericGrade +
+									" is a(n) "+ letterGrade + "." 
+									);
+				
+			}
+			else
+			{
+				System.out.println("Grade entered is not valid. ");
+			}
+			
+			//Prompt and record user input again for the while loop
+			System.out.println("Enter a numeric grade (-1 to quit): ");
+			numericGrade = input.nextInt();
+		}
+		System.out.println("End of program!");
+		
 		
 
 	}
