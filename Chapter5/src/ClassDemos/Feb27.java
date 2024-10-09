@@ -9,6 +9,8 @@ public class Feb27
 		int sequenceLength = 0;
 		String last = "aab";
 		
+
+		
 		char a = last.charAt(0);
 		
 		do
