@@ -41,6 +41,15 @@ public class Rectangle
 		
 	}
 	
+	public String toString() 
+	{
+		String rectangleString;
+
+		rectangleString = "Rectangle has length " + length + " and width " + width;
+	 	return(rectangleString);
+	}
+	
+	
 	public double area()
 	{
 		double rectArea;
@@ -49,6 +58,38 @@ public class Rectangle
 		
 		return rectArea;
 	}
+	
+	public boolean equals(Object r)
+	{
+		Rectangle testObj = (Rectangle)r;
+		
+		if(testObj.getLength() == length && testObj.getWidth() == width)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
 
+	public int compareTo(Object r)
+	{
+		Rectangle testObj = (Rectangle)r;
+		
+		if(length < testObj.getLength() || width < testObj.getWidth())
+		{
+			return(-1);
+		}
+		else if(length == testObj.getLength() || width == testObj.getWidth())
+		{
+			return(0);
+		}
+		else
+		{
+			return(1);
+		}
+	}
 
 }
