@@ -3,7 +3,7 @@ package ClassDemos;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class Feb12 
+public class Eggs 
 {
 
 	public static void main(String[] args) 
