@@ -3,7 +3,7 @@ package ClassDemos;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class Feb13 
+public class InitialAmount 
 {
 
 	public static void main(String[] args) 
