@@ -6,11 +6,11 @@ public class Bank
 	private double accountBalance;
 	private Customer aCustomer;
 	
-	public Bank(String bankN, double bal)
+	public Bank(String bankN, double bal, Customer c)
 	{
 		bankName = bankN;
 		accountBalance = bal;
-		aCustomer = new Customer();
+		aCustomer = c;
 	}
 	public String getbankName()
 	{
@@ -48,8 +48,9 @@ public class Bank
 		String bank;
 		
 		bank = "Bank name is: " 
-				+ bankName + "and account balance is $: "
-				+ accountBalance;
+				+ bankName + " and account balance is $: "
+				+ accountBalance +"\n"
+				+ aCustomer;
 
 		
 		return bank;
